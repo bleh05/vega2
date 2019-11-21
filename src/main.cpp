@@ -19,7 +19,7 @@ Intake intake(8,7);
 Arm arm(9);
 
 auto drive = ChassisControllerFactory::create(
-  2,6,-5,-3,
+  {2,6},{-5,-3},
   AbstractMotor::gearset::green,
   {5.416_in, 11.5_in}
 );
